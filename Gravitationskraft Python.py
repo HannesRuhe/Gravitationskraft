@@ -1,5 +1,5 @@
 # Gravitationskraft:
-#
+
 # Variabeln: F = Gravitationskraft = graviKra
 #            Fg = Gewichtskraft = gewiKra
 #            G = Gravitationskonstante = graviKo
@@ -7,10 +7,7 @@
 #            m1 = Masse 1 in Kg = mass1
 #            m2 = Masse 2 in Kg = mass2
 #            r² = Abstand der Massen hoch 2 = abstand
-#
-# Zwei Massen: F = G * (m1 * m2) / r²
-# Erde:        Fe = Ge * m1
-  
+
 # Texte:
 
 einführung = """
@@ -57,7 +54,7 @@ while end == 1:
 
 # Rechenart definieren:
 
-    rechenart1 = input(rechenarttext1)
+    rechenart1 = input(rechenarttext1).lower()
 
     if rechenart1 == "y":
     
@@ -115,7 +112,7 @@ while end == 1:
 
     print("")
     print("Willst du das Programm beenden? Dann drücke y (yes).")      
-    end = input("Wenn nicht, dann drücke n (no):   ")
+    end = input("Wenn nicht, dann drücke n (no):   ").lower()
 
     if end == "y":
         end = 0
